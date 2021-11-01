@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { useHistory } from 'react-router-dom';
 import Header from './components/Header';
-import SideBar from './components/Sidebar'
+
 
 
 
@@ -25,7 +25,7 @@ const Login = (props) => {
         
         <section >  
             <Header />
-            <SideBar />
+           
             <div className='login'>
             <div className='loginContainer'>
             <label>User name</label>
@@ -43,7 +43,8 @@ const Login = (props) => {
                 <p>Don't Have an account?
                 <span >Sign up</span></p> */}
                 </div> : <div>
-                <button onClick={()=>{history.push('/welcome')}}>Login</button>
+                {/* <button onClick={()=>{history.push('/welcome')}}>Login</button> */}
+                <button onClick={()=>{history.push('/welcomeadmin')}}>Login</button>
                 <p>Don't Have an account 
                 <span onClick={()=>{history.push('/register')}}>Register</span></p>
                 </div>

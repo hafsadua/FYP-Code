@@ -17,6 +17,9 @@ import Welcome from './components/Welcome'
 import DeleteUser from './components/Deleteuser'
 import Register from './components/Register';
 import Verify from './components/Verify';
+import DisplayUsers from './components/DisplayUsers';
+import SidebarVendor from './components/SidebarVendor';
+import WelcomeAdmin from './components/WelcomeAdmin';
 
 function App() {
 
@@ -137,11 +140,20 @@ function App() {
           <Route path="/deleteuser" exact>
             <DeleteUser />
           </Route>
+          <Route path="/displayusers" exact>
+            <DisplayUsers />
+          </Route>
           <Route path="/register" exact>
             <Register data={data} change={handleChange} />
           </Route>
           <Route path="/verify" exact>
             <Verify data={data} change={handleChange} />
+          </Route>
+          <Route path="/sidebarvendor" exact>
+            <SidebarVendor />
+          </Route>
+          <Route path="/welcomeadmin" exact>
+            <WelcomeAdmin />
           </Route>
         <Route path= "/login" exact>
           <Login 
@@ -159,7 +171,6 @@ function App() {
 
         </Switch>
       </BrowserRouter>
-
 
 
 

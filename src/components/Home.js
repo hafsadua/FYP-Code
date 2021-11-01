@@ -13,7 +13,7 @@ function Home() {
                     }}>Login</button>
                     <h5><br></br></h5>
             <button className="homebtn" onClick={() => {
-                      history.push("/login")
+                      history.push("/register")
                     }}>Register</button>        
             </div>
       

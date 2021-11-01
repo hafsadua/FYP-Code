@@ -14,7 +14,8 @@ alert("User Deleted!")
                 Delete User<br></br>
                 <label>Email:  </label>
                 <input></input><br></br>
-                <label>Pass:  </label>
+                <label>Mobile Number:
+                      </label>
                 <input type="password"></input><br></br><br></br>
                 <button className="homebtn" onClick={Delete}>Delete</button>
             </h1>

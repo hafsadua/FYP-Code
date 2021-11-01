@@ -15,7 +15,7 @@ function ManageUsers() {
             <Header />
             <SideBar />
             <br></br>
-            <button className="homebtn" onClick={UsersList}>Display List of Users</button><br></br><br></br>
+            <button className="homebtn" onClick={()=>{history.push("/displayusers")}}>Display List of Users</button><br></br><br></br>
             <button className="homebtn"onClick={() => {
                       history.push("deleteuser")
                     }} >Delete User</button><br></br><br></br>

@@ -1,18 +1,21 @@
 import React from 'react'
 import Header from './Header';
-import SideBar from './Sidebar'
+import SidebarVendor from './SidebarVendor';
 
 function Welcome() {
     const token = () =>{
         alert("Currently there is no any token in Queue!!")
     }
+    const TokenNumbers =() =>{
+
+    }
     return (
         <div className="home">
             <Header />
-            <SideBar />
+            <SidebarVendor />
             <h1>Welcome To your Panel</h1> <br></br>
-            <button className="homebtn" onClick={token}> Check Token Number</button>
-            
+            <button className="homebtn" onClick={token}> Check Token Number</button><br></br><br></br>
+            <button className="homebtn" onClick={TokenNumbers}> Define no of Tokens</button>
         </div>
     )
 }

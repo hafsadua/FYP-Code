@@ -43,8 +43,8 @@ const Login = (props) => {
                 <p>Don't Have an account?
                 <span >Sign up</span></p> */}
                 </div> : <div>
-                {/* <button onClick={()=>{history.push('/welcome')}}>Login</button> */}
-                <button onClick={()=>{history.push('/welcomeadmin')}}>Login</button>
+                <button onClick={()=>{history.push('/welcome')}}>Login</button>
+                {/* <button onClick={()=>{history.push('/welcomeadmin')}}>Login</button> */}
                 <p>Don't Have an account 
                 <span onClick={()=>{history.push('/register')}}>Register</span></p>
                 </div>

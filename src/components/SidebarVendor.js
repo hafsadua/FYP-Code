@@ -9,17 +9,13 @@ const SidebarVendor = (props) => {
     <Menu>
       <button className="menu-item , sidebarButtons" 
       onClick={() => {
-                      history.push("/")
+                      history.push("/welcome")
                     }}>Home</button>
     
     <button className="menu-item , sidebarButtons" onClick={() => {
-                      history.push("/")
+                      history.push("/profileIBA")
                     }}>Profile</button>
     
-
-    <button className="menu-item , sidebarButtons" onClick={() => {
-                      history.push("/aboutus")
-                    }}>About Us</button>
 
     <button className="menu-item , sidebarButtons" onClick={() => {
                       history.push("/login")

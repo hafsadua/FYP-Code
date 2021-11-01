@@ -20,6 +20,7 @@ import Verify from './components/Verify';
 import DisplayUsers from './components/DisplayUsers';
 import SidebarVendor from './components/SidebarVendor';
 import WelcomeAdmin from './components/WelcomeAdmin';
+import ProfileIBA from './components/ProfileIBA';
 
 function App() {
 
@@ -154,6 +155,9 @@ function App() {
           </Route>
           <Route path="/welcomeadmin" exact>
             <WelcomeAdmin />
+          </Route>
+          <Route path="/profileIBA" exact>
+            <ProfileIBA />
           </Route>
         <Route path= "/login" exact>
           <Login 
